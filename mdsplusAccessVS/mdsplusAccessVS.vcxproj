@@ -153,6 +153,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Kirana.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mdsplusAccess.cpp" />
   </ItemGroup>
@@ -163,6 +164,7 @@
     <Text Include="Notes.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Kirana.h" />
     <ClInclude Include="mdsplusAccess.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
