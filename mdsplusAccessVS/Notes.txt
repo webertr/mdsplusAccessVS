@@ -1,0 +1,31 @@
+My notes will go here.
+
+I had to put the folder:
+
+C:\Program Files\MDSplus\include
+
+In the Project->Properties->VC++ Directories->Include directories.
+
+I had to add some .lib files, which as I understand it are static libraries in Windows, in the
+
+Project->Properties->Linker->Input->Additional Dependencies :
+
+C:\Program Files\MDSplus\devtools\lib64\visual_studio\mdsdcl.lib
+C:\Program Files\MDSplus\devtools\lib64\visual_studio\mdsipshr.lib
+C:\Program Files\MDSplus\devtools\lib64\visual_studio\mdslib.lib
+C:\Program Files\MDSplus\devtools\lib64\visual_studio\mdsobjectscppshr-vs.lib
+C:\Program Files\MDSplus\devtools\lib64\visual_studio\mdsservershr.lib
+C:\Program Files\MDSplus\devtools\lib64\visual_studio\mdsshr.lib
+C:\Program Files\MDSplus\devtools\lib64\visual_studio\tdishr.lib
+C:\Program Files\MDSplus\devtools\lib64\visual_studio\treeshr.lib
+
+I had to install the latest version of MDSplus, Version 7.50-0, and un-install version 6, to get the visual studio .lib files.
+
+Getting a:
+
+annot execute command in fuze shot 190403046: %TDI-E-UNKNOWN_VAR, Unknown/undefined variable name.
+
+In order to run MDSPlus TDI commands, you have to find that file that called "UWmdsplus", and put in a folder:
+
+C:\Program Files\MDSplus\tdi\local
+
